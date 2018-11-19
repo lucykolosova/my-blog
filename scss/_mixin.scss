@@ -1,0 +1,65 @@
+@mixin param(){
+  &__title-second {
+    color: #bf9e5a;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    
+
+  }
+  &__title-first {
+    color: #313131;
+    font-family: "Playfair Display";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+  &__comment {
+    height: 12px;
+    color: #999999;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    &-item {
+      float: left;
+      padding-right: 28px;
+    }
+
+  }
+  &__paragraf {
+    color: #414141;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 35px;
+  }
+  &__text-content {
+    padding: 20px;
+  }
+}
+@mixin post ($count){
+  @for $i from 1 through $count {
+    &:nth-child(#{$i}) > div{
+      &::before {
+        content: '#{$i}';
+        display: block;
+        opacity: 0.12;
+        color: #000000;
+        font-family: "Playfair Display";
+        font-size: 120px;
+        font-style: italic;
+        line-height: 24px;
+        letter-spacing: 3px;
+
+      }
+    }
+  }
+}
