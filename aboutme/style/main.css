@@ -373,14 +373,43 @@ template {
   padding-bottom: 40px;
 }
 
-.menu {
+.menu__list {
   display: flex;
   justify-content: space-between;
   background-color: white;
 }
-@media all and (max-width: 1199px) {
-  .menu {
-    flex-wrap: wrap;
+@media (max-width: 750px) {
+  .menu__list {
+    display: none;
+  }
+}
+.menu__btn {
+  display: none;
+  position: relative;
+  font-size: 20px;
+}
+@media (max-width: 750px) {
+  .menu__btn {
+    display: block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding-right: 15px;
+    padding-top: 15px;
+    font-size: 25px;
+    color: #000000;
+    font-family: "Playfair Display";
+  }
+  .menu__btn + ul {
+    transition: 0.3s;
+  }
+  .menu__btn--close + ul {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .menu__btn--open + ul {
+    opacity: 1;
+    pointer-events: auto;
   }
 }
 .menu__item {
@@ -397,10 +426,12 @@ template {
 .menu__link {
   text-decoration: none;
   color: black;
+  padding-bottom: 1px;
 }
 .menu__link:hover {
   display: block;
   border-bottom: 1px solid black;
+  padding-bottom: 0;
 }
 
 .block {

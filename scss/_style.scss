@@ -71,12 +71,53 @@
 }
 .logo{
   background-color: white;
+  text-align: center;
+  padding: 10px;
 }
 
 .menu {
+
+  &__btn {
+    display: none;
+    position: relative;
+    font-size: 20px;
+    @media (max-width: 500px) {
+      display: block;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      padding-right: 15px;
+      padding-top: 15px;
+      font-size: 25px;
+      color: black;
+      font-family: "Playfair Display";
+      & + ul {
+        transition: .3s;
+      }
+      &--close {
+        & + ul {
+          opacity: 0;
+          pointer-events: none;
+        }
+      }
+      &--open {
+        & + ul {
+          opacity: 1;
+          pointer-events: auto;
+        }
+      }
+    }
+
+  }
+  &__list{
   display: flex;
   justify-content: space-between;
   background-color: white;
+  @media (max-width: 750px) {
+    display: none;
+
+  }
+  }
   &__item {
     color: #414141;
     font-family: Lato;

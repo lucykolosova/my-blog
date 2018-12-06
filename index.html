@@ -11,14 +11,20 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
           integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>Title</title>
+    <script src="index.js"></script>
 </head>
 <body class="background">
 <header class="banner">
+    <div class="container">
         <h1 class="banner__my-blog">my blog<br/><i class="fas fa-arrow-down"></i></h1>
+    </div>
 </header>
 <div class="logo">
+    <img src="./image/logo.png">
+    <p class="logo__paragraf">a photographic journals for who<br/>
     <div class="container">
-        <ul class="menu">
+    <nav class="menu">
+        <ul class="menu__list">
             <li class="menu__item"><a class="menu__link" href="#">home</a></li>
             <li class="menu__item"><a class="menu__link" href="#">pages</a></li>
             <li class="menu__item"><a class="menu__link" href="#">life style</a></li>
@@ -31,6 +37,7 @@
                 <input type="search" value="search" class=""/></li>
 
         </ul>
+    </nav>
     </div>
 </div>
 
@@ -159,7 +166,7 @@
         <div class="social-icon">
 
             <ul class="social-icon__menu social-icon__menu--destination">
-                <li class="social-icon__menu-item"><i class="far fa-heart"> </i>5</li>
+                <li class="social-icon__menu-item"><i class="far fa-heart"> 5</i></li>
                 <li class="social-icon__menu-item"><i class="fab fa-facebook-f"></i> facebook</li>
                 <li class="social-icon__menu-item"><i class="fab fa-twitter"></i> twitter</li>
                 <li class="social-icon__menu-item"><i class="fab fa-google-plus-g"></i> google</li>
@@ -167,29 +174,6 @@
                 <li class="social-icon__menu-item"><i class="far fa-envelope"></i> email</li>
             </ul>
         </div>
-        <div class="related-post">
-            <div class="related-post__title ">&#176;related posts&#176;</div>
-            <div class="related-post__trip">
-                <div class="related-post__trip-box">
-                    <div class="related-post__trip-foto"></div>
-                    <div class="related-post__trip-text">June Asian Trip</div>
-                </div>
-                <div class="related-post__trip-box">
-                    <div class="related-post__trip-foto"></div>
-                    <div class="related-post__trip-text">Nothing like hiking Everest</div>
-                </div>
-
-                <div class="related-post__trip-box">
-                    <div class="related-post__trip-foto"></div>
-                    <div class="related-post__trip-text">Lost Memories</div>
-                </div>
-                <div class="related-post__trip-box">
-                    <div class="related-post__trip-foto"></div>
-                    <div class="related-post__trip-text">Amazing Canada</div>
-                </div>
-            </div>
-        </div>
-
     </section>
     <section class="connections clearfix">
         <h2 class="connections__title-second">memories</h2>
@@ -222,32 +206,9 @@
                 <li class="social-icon__menu-item"><i class="far fa-envelope"></i> email</li>
             </ul>
         </div>
-        <div class="related-post">
-            <div class="related-post__title ">&#176;related posts&#176;</div>
-            <div class="related-post__trip">
-                <div class="related-post__trip-box">
-                    <div class="related-post__trip-foto"></div>
-                    <div class="related-post__trip-text">June Asian Trip</div>
-                </div>
-                <div class="related-post__trip-box">
-                    <div class="related-post__trip-foto"></div>
-                    <div class="related-post__trip-text">Nothing like hiking Everest</div>
-                </div>
-
-                <div class="related-post__trip-box">
-                <div class="related-post__trip-foto"></div>
-                <div class="related-post__trip-text">Lost Memories</div>
-            </div>
-            <div class="related-post__trip-box">
-                <div class="related-post__trip-foto"></div>
-                <div class="related-post__trip-text">Amazing Canada</div>
-            </div>
-        </div>
-</div>
-
 </section>
-<div class="button-op">
-    <input type="button" value="older posts &#8594; " class="old-post"/></div>
+    <div class="button-op">
+        <input type="button" value="older posts &#8594; " class="old-post"/></div>
 
 
 </div>
@@ -255,20 +216,15 @@
     <div class="container">
         <div class="social-menu">
             <ul class="social-menu__list">
-                <li class="social-menu__icon"><a class="social-menu__link" href="#"> <i
-                        class="fab fab--sm fa-facebook-f"></i><i
+                <li class="social-menu__icon"><a class="social-menu__link" href="#"> <i class="fab fab--sm fa-facebook-f"></i><i
                         class="social-menu__text">facebook</i></a></li>
-                <li class="social-menu__icon"><a class="social-menu__link" href="#"> <i
-                        class="fab fab--sm fa-twitter"></i><i
+                <li class="social-menu__icon"><a class="social-menu__link" href="#"> <i class="fab fab--sm fa-twitter"></i><i
                         class="social-menu__text">twitter</i></a></li>
-                <li class="social-menu__icon"><a class="social-menu__link" href="#"><i
-                        class="fab fab--sm fa-instagram"></i><i
+                <li class="social-menu__icon"><a class="social-menu__link" href="#"><i class="fab fab--sm fa-instagram"></i><i
                         class="social-menu__text">instagram</i></a></li>
-                <li class="social-menu__icon"><a class="social-menu__link" href="#"><i
-                        class="fab fab--sm fa-google"></i><i
+                <li class="social-menu__icon"><a class="social-menu__link" href="#"><i class="fab fab--sm fa-google"></i><i
                         class="social-menu__text">google</i></a></li>
-                <li class="social-menu__icon"><a class="social-menu__link" href="#"><i
-                        class="fab fab--sm fa-pinterest"></i><i
+                <li class="social-menu__icon"><a class="social-menu__link" href="#"><i class="fab fab--sm fa-pinterest"></i><i
                         class="social-menu__text">pinterest</i></a></li>
 
             </ul>
@@ -276,43 +232,42 @@
     </div>
 </div>
 
-<div class="container">
-    <div class="interesting">
-        <div class="interesting__box">
-            <h2 class="interesting__title">about for me <img src="./image/line-rad.png" width="90%"></h2>
-            <div class="interesting__img"></div>
-            <p class="interesting__text">
-                Sed ut perspiciatis unde omnis iste slore error sit voluptatem accusantiump tium, totam rem aperiam,
-                eaque
-                ipsa quae ab illoillo inventore veritatis et quasi...
-            </p>
+    <div class="container">
+        <div class="interesting">
+    <div class="interesting__box">
+        <h2 class="interesting__title">about for me <img src="./image/line-rad.png" width="90%"></h2>
+        <div class="interesting__img"></div>
+        <p class="interesting__text">
+            Sed ut perspiciatis unde omnis iste slore error sit voluptatem accusantiump tium, totam rem aperiam, eaque
+            ipsa quae ab illoillo inventore veritatis et quasi...
+        </p>
 
-        </div>
+    </div>
         <div class="interesting__box">
             <h2 class="interesting__title">popular posts <img src="./image/line-rad.png" width="90%"></h2>
             <div class="interesting__box-row">Being Your True Self
-                <p class="interesting__box-date">June 14, 2015</p></div>
+            <p class="interesting__box-date">June 14, 2015</p></div>
             <div class="interesting__box-row">Bike Trip with Friends
-                <p class="interesting__box-date">June 14, 2015</p></div>
+            <p class="interesting__box-date">June 14, 2015</p></div>
             <div class="interesting__box-row">The Beauty of Flower
-                <p class="interesting__box-date">June 14, 2015</p></div>
+            <p class="interesting__box-date">June 14, 2015</p></div>
             <div class="interesting__box-row interesting__box-row--border-none">Living a weathy life
-                <p class="interesting__box-date">June 14, 2015</p></div>
+            <p class="interesting__box-date">June 14, 2015</p></div>
         </div>
-        <div class="interesting__box">
-            <h2 class="interesting__title">flickr photos<img src="./image/line-rad.png" width="90%"></h2>
-            <img src="./image/avocado.jpg" alt="avo" class="interesting__box-photos">
-            <img src="./image/avocado.jpg" alt="avo" class="interesting__box-photos">
-            <img src="./image/avocado.jpg" alt="avo" class="interesting__box-photos">
-            <img src="./image/avocado.jpg" alt="avo" class="interesting__box-photos">
-            <img src="./image/avocado.jpg" alt="avo" class="interesting__box-photos">
-            <img src="./image/avocado.jpg" alt="avo" class="interesting__box-photos">
-            <img src="./image/avocado.jpg" alt="avo" class="interesting__box-photos">
-            <img src="./image/avocado.jpg" alt="avo" class="interesting__box-photos">
-            <img src="./image/avocado.jpg" alt="avo" class="interesting__box-photos">
-            <input class="interesting__button" type="button" value="follow me">
-        </div>
+    <div class="interesting__box">
+        <h2 class="interesting__title">flickr photos<img src="./image/line-rad.png" width="90%"></h2>
+        <img src="./image/avocado.jpg" alt="avo" class="interesting__box-photos">
+        <img src="./image/avocado.jpg" alt="avo" class="interesting__box-photos">
+        <img src="./image/avocado.jpg" alt="avo" class="interesting__box-photos">
+        <img src="./image/avocado.jpg" alt="avo" class="interesting__box-photos">
+        <img src="./image/avocado.jpg" alt="avo" class="interesting__box-photos">
+        <img src="./image/avocado.jpg" alt="avo" class="interesting__box-photos">
+        <img src="./image/avocado.jpg" alt="avo" class="interesting__box-photos">
+        <img src="./image/avocado.jpg" alt="avo" class="interesting__box-photos">
+        <img src="./image/avocado.jpg" alt="avo" class="interesting__box-photos">
+        <input class="interesting__button" type="button" value="follow me">
     </div>
+</div>
 </div>
 
 </body>
